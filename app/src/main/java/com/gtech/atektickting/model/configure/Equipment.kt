@@ -1,0 +1,30 @@
+package com.gtech.atektickting.model.configure
+
+data class Equipment(
+    val backupSSID: Any,
+    val backupSSIDPassword: Any,
+    val cchs_reference: Any,
+    val cchs_station_id: Any,
+    val company_id: String,
+    val coord_x: Any,
+    val coord_y: Any,
+    val description: Any,
+    val end_date: Any,
+    val endpointKeyHash: String,
+    val eq_type_id: String,
+    val eq_working_mode_id: String,
+    val equipment_id: String,
+    val gateDirection: String,
+    val gateId: String,
+    val gateway: String,
+    val hostName: Any,
+    val ip_address: String,
+    val kaa_station_name: Any,
+    val line_id: String,
+    val primarySSID: String,
+    val primarySSIDPassword: String,
+    val ridlr_id: String,
+    val station_id: String,
+    val status: String,
+    val subnet_mask: String
+)

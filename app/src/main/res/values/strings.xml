@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AtekTickting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mumbai_metro_one">Mumbai Metro One</string>
+    <string name="atek_payments">Atek Payments</string>
+</resources>

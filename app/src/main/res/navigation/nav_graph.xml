@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.gtech.atektickting.fragment.basic.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+
+        <action
+            android:id="@+id/goToSplashToLogin"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/goToSplashToConfig"
+            app:destination="@id/configureFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/goToSplashToPaperTicket"
+            app:destination="@id/paperTicketFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/configureFragment"
+        android:name="com.gtech.atektickting.fragment.basic.ConfigureFragment"
+        android:label="ConfigureFragment"
+        tools:layout="@layout/fragment_configure">
+
+        <action
+            android:id="@+id/goToConfigToLogin"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/paperTicketAnalysisFragment"
+        android:name="com.gtech.atektickting.fragment.paper.PaperTicketAnalysisFragment"
+        android:label="PaperTicketAnalysisFragment"
+        tools:layout="@layout/fragment_paper_ticket_analysis">
+
+        <action
+            android:id="@+id/goToPaperToAnalysis"
+            app:destination="@id/paperTicketFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.gtech.atektickting.fragment.basic.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/goToLoginToPaperTicket"
+            app:destination="@id/paperTicketFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/goToLoginToConfig"
+            app:destination="@id/configureFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/paperTicketFragment"
+        android:name="com.gtech.atektickting.fragment.paper.PaperTicketFragment"
+        android:label="PaperTicketFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/goToPaperTicketToAnalysis"
+            app:destination="@id/paperTicketAnalysisFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/goToPaperTicketToLogin"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+</navigation>
