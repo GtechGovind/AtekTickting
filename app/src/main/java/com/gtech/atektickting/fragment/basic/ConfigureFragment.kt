@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.gtech.atektickting.databinding.FragmentConfigureBinding
+import com.gtech.atektickting.util.Enums
 import com.gtech.atektickting.util.NetworkState
 
 class ConfigureFragment : Fragment(), NetworkState {
@@ -22,11 +23,11 @@ class ConfigureFragment : Fragment(), NetworkState {
 
     }
 
-    override fun Loading(isLoading: Boolean) {
+    override fun loading(isLoading: Boolean) {
         TODO("Not yet implemented")
     }
 
-    override fun onError(message: String) {
+    override fun onError(message: Enums.ERROR) {
         TODO("Not yet implemented")
     }
 
