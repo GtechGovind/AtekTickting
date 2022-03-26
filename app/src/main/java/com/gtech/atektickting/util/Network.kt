@@ -1,6 +1,7 @@
 package com.gtech.atektickting.util
 
 import android.util.Log
+import com.gtech.atektickting.BuildConfig
 import java.net.InetAddress
 import java.net.NetworkInterface
 import java.util.*
@@ -35,6 +36,12 @@ object Network {
             Log.e("IP ADDRESS", e.message!!)
         }
         return ""
+    }
+
+
+    fun isConnected(): Boolean {
+        val command = "ping " + BuildConfig.HOST_IP
+        return Runtime.getRuntime().exec(command).waitFor() == 0
     }
 
 }

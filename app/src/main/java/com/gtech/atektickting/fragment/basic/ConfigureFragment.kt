@@ -5,16 +5,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.gtech.atektickting.R
+import com.gtech.atektickting.databinding.FragmentConfigureBinding
+import com.gtech.atektickting.util.NetworkState
 
-class ConfigureFragment : Fragment() {
+class ConfigureFragment : Fragment(), NetworkState {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_configure, container, false)
+    private lateinit var binding: FragmentConfigureBinding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        binding = FragmentConfigureBinding.inflate(layoutInflater, container, false)
+        initializeConfigFragment()
+        return binding.root
+    }
+
+    private fun initializeConfigFragment() {
+
+    }
+
+    override fun Loading(isLoading: Boolean) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onError(message: String) {
+        TODO("Not yet implemented")
     }
 
 }
