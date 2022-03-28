@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 
-class SharedResource(private val context: Context) {
+class SharedResource(context: Context) {
 
     private var resource: SharedPreferences = context.getSharedPreferences(
         "ATEK_STATIC_DATA", MODE_PRIVATE

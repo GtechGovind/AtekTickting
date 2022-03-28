@@ -15,8 +15,8 @@ import com.gtech.atektickting.util.SharedResource
 @SuppressLint("CustomSplashScreen")
 class SplashScreenFragment : Fragment() {
 
-    lateinit var binding: FragmentSplashScreenBinding
-    lateinit var resource: SharedResource
+    private lateinit var binding: FragmentSplashScreenBinding
+    private lateinit var resource: SharedResource
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentSplashScreenBinding.inflate(layoutInflater, container, false)

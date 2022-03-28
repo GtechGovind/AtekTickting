@@ -3,12 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.basic.ConfigureFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
-        android:textSize="100sp" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="100dp"
+            android:contentDescription="@string/configuration"
+            android:src="@drawable/ic_configuration" />
+
+        <Button
+            android:id="@+id/Configure"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:padding="20dp"
+            app:iconSize="40dp"
+            android:text="@string/configure_application"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_settings"/>
+
+        <ProgressBar
+            android:id="@+id/ConfigProgressBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
 
 </FrameLayout>

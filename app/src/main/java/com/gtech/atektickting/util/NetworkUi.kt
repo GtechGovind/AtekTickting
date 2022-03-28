@@ -1,6 +1,6 @@
 package com.gtech.atektickting.util
 
-interface NetworkState {
+interface NetworkUi {
     fun loading(isLoading: Boolean)
     fun onError(message: Enums.ERROR)
 }
