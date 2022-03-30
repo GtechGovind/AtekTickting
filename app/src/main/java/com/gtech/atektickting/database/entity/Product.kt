@@ -12,7 +12,7 @@ data class Product(
     val active: String?,
     val name: String?,
     val company_id: String?,
-    val description: String?,
+    val description: String,
     val qr_type_id: String?,
     val same_station_over_time: String?,
     val same_station_over_time_penalty: String?,

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    app:cardCornerRadius="10sp"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:layout_margin="10sp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.basic.ConfigureFragment">
 
@@ -11,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center"
         tools:ignore="UselessParent">
 
         <ImageView
@@ -43,4 +45,4 @@
 
     </LinearLayout>
 
-</FrameLayout>
+</androidx.cardview.widget.CardView>

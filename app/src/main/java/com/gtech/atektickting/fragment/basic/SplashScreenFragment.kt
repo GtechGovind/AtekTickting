@@ -22,7 +22,7 @@ class SplashScreenFragment : Fragment() {
         binding = FragmentSplashScreenBinding.inflate(layoutInflater, container, false)
 
         // DECLARATIONS
-        resource = context?.let { SharedResource(it) }!!
+        resource = SharedResource(requireContext())
 
         initTransaction()
 
@@ -32,7 +32,11 @@ class SplashScreenFragment : Fragment() {
     private fun initTransaction() {
 
         if (resource.getBoolDataData(Key.IS_CONFIGURED)) {
-            findNavController().navigate(R.id.goToSplashToLogin)
+            if (resource.getBoolDataData(Key.IS_LOGIN)) {
+                findNavController().navigate(R.id.goToSplashToPaperTicket)
+            } else {
+                findNavController().navigate(R.id.goToSplashToLogin)
+            }
         } else {
             findNavController().navigate(R.id.goToSplashToConfig)
         }

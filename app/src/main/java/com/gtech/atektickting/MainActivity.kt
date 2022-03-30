@@ -1,20 +1,21 @@
 package com.gtech.atektickting
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.Navigation
+import androidx.appcompat.app.AppCompatActivity
+import com.gtech.atektickting.controller.NavBarController
 import com.gtech.atektickting.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    lateinit var mainBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        mainBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(mainBinding.root)
 
-
+        NavBarController.setNavContent(this, mainBinding)
 
     }
+
 }

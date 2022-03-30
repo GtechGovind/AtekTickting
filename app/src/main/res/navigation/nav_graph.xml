@@ -83,7 +83,7 @@
         android:id="@+id/paperTicketFragment"
         android:name="com.gtech.atektickting.fragment.paper.PaperTicketFragment"
         android:label="PaperTicketFragment"
-        tools:layout="@layout/fragment_login">
+        tools:layout="@layout/fragment_paper_ticket">
 
         <action
             android:id="@+id/goToPaperTicketToAnalysis"

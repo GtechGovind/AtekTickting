@@ -8,8 +8,10 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.gtech.atektickting.MainActivity
 import com.gtech.atektickting.R
 import com.gtech.atektickting.controller.ConfigController
+import com.gtech.atektickting.controller.NavBarController
 import com.gtech.atektickting.databinding.FragmentConfigureBinding
 import com.gtech.atektickting.model.configure.ConfigResponse
 import com.gtech.atektickting.repository.ConfigRepository
@@ -32,6 +34,11 @@ class ConfigureFragment : Fragment(), NetworkUi, ControllerService {
     }
 
     private fun initializeConfigFragment() {
+
+        NavBarController.setNavContent(
+            requireActivity(),
+            (this.activity as MainActivity).mainBinding
+        )
 
         repository = ConfigRepository(
             this@ConfigureFragment,

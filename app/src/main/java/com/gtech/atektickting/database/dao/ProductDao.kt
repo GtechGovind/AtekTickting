@@ -15,6 +15,9 @@ interface ProductDao {
     @Update
     suspend fun update(product: Product)
 
+    @Query("SELECT * FROM product")
+    suspend fun getProducts(): List<Product>
+
     @Query("SELECT * FROM product WHERE pass_id = :pass_id")
     suspend fun getProduct(pass_id: Int): Product
 

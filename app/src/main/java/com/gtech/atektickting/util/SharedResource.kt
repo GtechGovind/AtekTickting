@@ -33,18 +33,29 @@ class SharedResource(context: Context) {
     }
 
     fun getFloatDataData(key: String): Float {
-        return resource.getFloat(key.toString(), 0F)
+        return resource.getFloat(key, 0F)
     }
 
     fun getLongDataData(key: String): Long {
-        return resource.getLong(key.toString(), 0L)
+        return resource.getLong(key, 0L)
     }
 
 }
 
 enum class Key {
     IS_CONFIGURED,
-    IS_LOGIN
+
+    // USER
+    IS_LOGIN,
+    USER_NAME,
+    USER_ID,
+    EMAIL,
+    PHONE,
+    OPERATOR_ID,
+
+    // SHIFT
+    SHIFT_ID,
+    STATION_ID,
 }
 
 

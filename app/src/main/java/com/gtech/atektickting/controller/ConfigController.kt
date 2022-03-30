@@ -31,7 +31,7 @@ class ConfigController(private val service: ControllerService) {
                 instance.userDao().insert(
                     user = User(
                         user_id = user.user_id,
-                        user_name = user.user_name,
+                        user_name = user.login,
                         email = user.email,
                         operator_id = user.operator_id,
                         password = user.password,

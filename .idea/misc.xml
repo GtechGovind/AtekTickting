@@ -3,16 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.129" />
+        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/drawable/bg_selector.xml" value="0.1455" />
         <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/drawable/ic_configuration.xml" value="0.1" />
         <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/drawable/ic_settings.xml" value="0.1" />
         <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/activity_base.xml" value="0.28888888888888886" />
-        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/fragment_blank.xml" value="0.171875" />
         <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/fragment_configure.xml" value="0.1" />
-        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/fragment_login.xml" value="0.2759259259259259" />
-        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/fragment_paper_ticket.xml" value="0.2759259259259259" />
+        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/fragment_login.xml" value="0.12" />
+        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/fragment_paper_ticket.xml" value="0.2" />
         <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/fragment_paper_ticket_analysis.xml" value="0.2759259259259259" />
         <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/fragment_splash_screen.xml" value="0.14" />
+        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/recycler_view_destintion.xml" value="0.34270833333333334" />
+        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/recycler_view_product.xml" value="0.2759259259259259" />
+        <entry key="..\:/OpenLoop/AtekTickting/app/src/main/res/layout/recycler_view_quantity.xml" value="0.2759259259259259" />
       </map>
     </option>
   </component>

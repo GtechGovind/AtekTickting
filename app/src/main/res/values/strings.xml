@@ -6,4 +6,16 @@
     <string name="atek_payments">Atek Payments</string>
     <string name="configuration">Configuration</string>
     <string name="configure_application">Configure Application</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="products">PRODUCTS</string>
+    <string name="ticket_analysis">TICKET ANALYSIS</string>
+    <string name="pet">PET</string>
+    <string name="destinations">DESTINATIONS</string>
+    <string name="summary">SUMMARY</string>
+    <string name="generate_ticket">GENERATE TICKET</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="station">Station</string>
+    <string name="menu">Menu</string>
 </resources>
